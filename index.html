@@ -54,7 +54,7 @@
             font-weight: 600;
             font-size: 18px;
             transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Fixed: Added base glow back */
             animation: pulseGlow 2s infinite ease-in-out;
         }
         .cta-button:hover {
@@ -62,9 +62,9 @@
             transform: scale(1.05);
         }
         @keyframes pulseGlow {
-            0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
-            50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); }
-            100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+            0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+            50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); }
+            100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
         }
         .features {
             padding: 60px 20px;
