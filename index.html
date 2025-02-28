@@ -3,119 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LifeSnaps - Pro Photography for Everyone</title>
+    <title>LifeSnaps</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
         }
         header {
-            background: #2c3e50;
-            color: white;
             text-align: center;
-            padding: 20px;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
         }
         h1 {
-            font-size: 48px;
+            font-size: 72px;
+            font-weight: 900;
             margin: 0;
+            letter-spacing: -2px;
+            text-transform: uppercase;
         }
         .tagline {
-            font-size: 20px;
-            font-style: italic;
+            font-size: 24px;
+            font-weight: 300;
+            opacity: 0.8;
+            margin: 10px 0 30px;
         }
         .cta-button {
-            background: #e74c3c;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+            background: #fff;
+            color: #000;
+            padding: 12px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            display: inline-block;
-            margin-top: 15px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
         }
-        .features, .plans {
+        .cta-button:hover {
+            background: #e0e0e0;
+            transform: scale(1.05);
+        }
+        .features {
+            padding: 60px 20px;
+            background: #000;
             text-align: center;
-            padding: 40px 20px;
         }
-        .features h2, .plans h2 {
-            font-size: 32px;
+        .features h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
         }
-        .feature-grid, .plan-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             max-width: 1200px;
             margin: 0 auto;
         }
-        .feature, .plan {
-            flex: 1;
-            min-width: 250px;
-            margin: 10px;
+        .feature {
+            padding: 20px;
         }
-        .feature h3, .plan h3 {
-            font-size: 24px;
+        .feature h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .feature p {
+            font-size: 16px;
+            font-weight: 300;
+            opacity: 0.7;
         }
         .plans {
-            background: #f5f5f5;
+            padding: 80px 20px;
+            background: #1a1a1a;
+            text-align: center;
+        }
+        .plans h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        .plan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .plan {
-            background: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
+            background: #222;
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .plan:hover {
+            transform: translateY(-10px);
+        }
+        .plan h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 15px;
+        }
+        .plan p {
+            font-size: 16px;
+            font-weight: 300;
+            opacity: 0.8;
+            margin: 0 0 20px;
         }
         footer {
-            background: #2c3e50;
-            color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background: #000;
+            font-size: 14px;
+            font-weight: 300;
+            opacity: 0.6;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>LifeSnaps</h1>
-        <p class="tagline">Professional photography made simple, affordable, and for everyone.</p>
+        <p class="tagline">Photography, reimagined.</p>
         <a href="#plans" class="cta-button">Get Started</a>
     </header>
 
     <section class="features">
-        <h2>Capture Life’s Moments, Your Way</h2>
-        <p>From quick phone snaps to in-person event shoots, LifeSnaps brings pro photographers to you—no crazy prices, no fancy gear required.</p>
+        <h2>Precision in Every Moment</h2>
         <div class="feature-grid">
             <div class="feature">
                 <h3>Phone Shoots</h3>
-                <p>Book a 15-minute virtual session. A pro guides you live, using your smartphone. Just $10.</p>
+                <p>Live guidance from pros. Your phone. 15 minutes. $10.</p>
             </div>
             <div class="feature">
                 <h3>Event Snaps</h3>
-                <p>Subscribe for real photographers at birthdays, holidays, or vacations. Affordable plans for every moment.</p>
+                <p>Real photographers for life’s events. Seamless subscriptions.</p>
             </div>
             <div class="feature">
                 <h3>AI Magic</h3>
-                <p>Smart editing polishes every shot—fast, flawless, and included in every package.</p>
+                <p>Flawless edits, instantly. Built into every shot.</p>
             </div>
         </div>
     </section>
 
     <section class="plans" id="plans">
-        <h2>Pick Your Plan</h2>
+        <h2>Your Vision, Your Plan</h2>
         <div class="plan-grid">
             <div class="plan">
-                <h3>Basic - $15/mo</h3>
-                <p>2 virtual phone shoots<br>1 in-person mini-shoot (30 mins)<br>Perfect for casual pics.</p>
+                <h3>Basic — $15/mo</h3>
+                <p>2 virtual phone shoots<br>1 in-person mini-shoot (30 mins)</p>
                 <a href="#" class="cta-button">Sign Up</a>
             </div>
             <div class="plan">
-                <h3>Plus - $30/mo</h3>
-                <p>4 virtual phone shoots<br>2 in-person shoots (1 hr each)<br>Great for families & events.</p>
+                <h3>Plus — $30/mo</h3>
+                <p>4 virtual phone shoots<br>2 in-person shoots (1 hr each)</p>
                 <a href="#" class="cta-button">Sign Up</a>
             </div>
             <div class="plan">
-                <h3>Vacation - $50/mo</h3>
-                <p>Unlimited virtual shoots<br>3 in-person shoots (1.5 hrs each)<br>Vacation photographer matching.</p>
+                <h3>Vacation — $50/mo</h3>
+                <p>Unlimited virtual shoots<br>3 in-person shoots (1.5 hrs each)</p>
                 <a href="#" class="cta-button">Sign Up</a>
             </div>
         </div>
